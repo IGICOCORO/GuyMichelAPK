@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guy Michel</string>
+    <string name="Archives">Archives</string>
+    <string name="Emission">Emissions</string>
+    <string name="Messages">Messages</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="blue">Bleu</string>
+    <string name="contenant">contenant (* = tout)</string>
+    <string name="copyright">fait par Guy Michel et Konstrictor membre de UDEV Team</string>
+    <string name="d_apr_s_le">d\'après le</string>
+    <string name="d_avant_le">d\'avant le</string>
+    <string name="green">Vert</string>
+    <string name="language">Langue :</string>
+    <string name="maroon">Marron</string>
+    <string name="mot_clef">mot clé</string>
+    <string name="navigation_drawer_close"></string>
+    <string name="sortie_le">sortie le</string>
+    <string name="theme">Theme :</string>
+    <string name="Recherche">Recherche</string>
+    <string name="annuler">Annuler</string>
+    <string name="annulé">Annulé</string>
+    <string name="août">Août</string>
+    <string name="avril">Avril</string>
+    <string name="confirmation_suppr">Voulez-vous Vraiment supprimer</string>
+    <string name="décembre">Décembre</string>
+    <string name="février">Février</string>
+    <string name="envoyer_avec">Envoyer avec</string>
+    <string name="janvier">Janvier</string>
+    <string name="juillet">Juillet</string>
+    <string name="juin">Juin</string>
+    <string name="mai">Mai</string>
+    <string name="mars">Mars</string>
+    <string name="novembre">Novembre</string>
+    <string name="octobre">Octobre</string>
+    <string name="ok">OK</string>
+    <string name="playing">En Cours de lecture :</string>
+    <string name="recherche">Recherche</string>
+    <string name="septembre">Septembre</string>
+    <string name="suppression">Suppression</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="title_activity_main">La Sainte Trinité</string>
+    <string name="audio_is_loading">chargement de l\'audio</string>
+    <string name="du">" du "</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guy Michel</string>
+    <string name="copyright">made by Guy Michel and Konstrictor member of UDEV Team</string>
+    <string name="Messages">Messages</string>
+    <string name="Emission">Emissions</string>
+    <string name="Archives">Archives</string>
+    <string name="contenant">contains (* = everything)</string>
+    <string name="mot_clef">keyword</string>
+    <string name="sortie_le">created on</string>
+    <string name="d_avant_le">before</string>
+    <string name="d_apr_s_le">after</string>
+    <string name="green">Green</string>
+    <string name="maroon">Brown</string>
+    <string name="blue">Blue</string>
+    <string name="theme">Theme :</string>
+    <string name="ikirundi" translatable="false">Ikirundi</string>
+    <string name="francais" translatable="false">Français</string>
+    <string name="english" translatable="false">English</string>
+    <string name="language">Language :</string>
+    <string name="suppression">Deletion</string>
+    <string name="confirmation_suppr">Do you really want to delete</string>
+    <string name="supprimer">Delete</string>
+    <string name="annuler">Cancel</string>
+    <string name="envoyer_avec">Send via</string>
+    <string name="recherche">Search</string>
+    <string name="janvier">January</string>
+    <string name="février">February</string>
+    <string name="mars">March</string>
+    <string name="avril">April</string>
+    <string name="mai">May</string>
+    <string name="juin">June</string>
+    <string name="juillet">Jully</string>
+    <string name="août">August</string>
+    <string name="septembre">September</string>
+    <string name="octobre">October</string>
+    <string name="novembre">November</string>
+    <string name="décembre">December</string>
+    <string name="annulé">Canceled</string>
+    <string name="playing">Playing :</string>
+    <string name="ok">OK</string>
+    <string name="Recherche">Search</string>
+    <string name="du">" created on "</string>
+    <string name="audio_is_loading">audio is loading...</string>
+</resources>

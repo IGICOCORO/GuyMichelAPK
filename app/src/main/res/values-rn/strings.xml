@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guy Michel</string>
+    <string name="Archives">Ububiko</string>
+    <string name="Emission">Ibiganiro</string>
+    <string name="Messages">Ubutumwa</string>
+    <string name="action_settings">Kuregera</string>
+    <string name="blue">Ubururu</string>
+    <string name="contenant">handitsemwo (* = vyose)</string>
+    <string name="copyright">yakozwe na Guy Michel na Konstrictor wo muri UDEV Team</string>
+    <string name="green">Urwatsi rubisi</string>
+    <string name="language">Ururimi :</string>
+    <string name="maroon">Umugina</string>
+    <string name="mot_clef">ijambo ryo kurondera</string>
+    <string name="sortie_le">c\'itariki</string>
+    <string name="theme">Ibara :</string>
+    <string name="d_apr_s_le">Imbere yo kuwa</string>
+    <string name="d_avant_le">inyuma yo kuwa</string>
+    <string name="Recherche">Kurondera</string>
+    <string name="annuler">Kubiheba</string>
+    <string name="annulé">Vyahebwe</string>
+    <string name="avril">Ndamukiza</string>
+    <string name="confirmation_suppr">Murakeneye vy\'ukuri Guhanagura</string>
+    <string name="décembre">Kigarama</string>
+    <string name="envoyer_avec">Rungika ukoresheje</string>
+    <string name="février">Ruhuhuma</string>
+    <string name="août">Myandagaro</string>
+    <string name="janvier">Nzero</string>
+    <string name="juillet">Mukakaro</string>
+    <string name="juin">Ruheshi</string>
+    <string name="mai">Rusama</string>
+    <string name="mars">Ntwarante</string>
+    <string name="novembre">Munyonyo</string>
+    <string name="octobre">Gitugutu</string>
+    <string name="ok">Sawa</string>
+    <string name="playing">Hariko Havuga :</string>
+    <string name="recherche">Kurondera</string>
+    <string name="septembre">Nyakanga</string>
+    <string name="suppression">Guhanagura</string>
+    <string name="supprimer">Hanagura</string>
+    <string name="title_activity_main">Ubutatu</string>
+    <string name="audio_is_loading">iriko irategurwa ...</string>
+    <string name="du">" y'itariki "</string>
+</resources>
