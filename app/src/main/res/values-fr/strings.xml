@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Guy Michel</string>
     <string name="Archives">Archives</string>
     <string name="Emission">Emissions</string>
     <string name="Messages">Messages</string>
@@ -8,8 +7,8 @@
     <string name="blue">Bleu</string>
     <string name="contenant">contenant (* = tout)</string>
     <string name="copyright">fait par Guy Michel et Konstrictor membre de UDEV Team</string>
-    <string name="d_apr_s_le">d\'après le</string>
-    <string name="d_avant_le">d\'avant le</string>
+    <string name="d_apr_s_le">sorties après le</string>
+    <string name="d_avant_le">sorties avant le</string>
     <string name="green">Vert</string>
     <string name="language">Langue :</string>
     <string name="maroon">Marron</string>
@@ -41,5 +40,21 @@
     <string name="supprimer">Supprimer</string>
     <string name="title_activity_main">La Sainte Trinité</string>
     <string name="audio_is_loading">chargement de l\'audio</string>
-    <string name="du">" du "</string>
+    <string name="du">\ sorties le\ </string>
+    <string name="blue_selected">Bleu (séléctionnée)</string>
+    <string name="green_selected">Vert (séléctionnée)</string>
+    <string name="maroon_selected">Marron (séléctionnée)</string>
+    <string name="about">A propos</string>
+    <string name="others">Autres</string>
+    <string name="testify">Témoigner</string>
+    <string name="no_more_data">plus de données à charger</string>
+    <string name="no_internet">Erreur : Veuillez verifiez votre connexion internet. Si ce problème presiste, Veuillez mettre à jours l\'application</string>
+    <string name="delete">supprimer</string>
+    <string name="download">télécharger</string>
+    <string name="playing_music_icon">icone de la musique en cours</string>
+    <string name="resume">reprendre</string>
+    <string name="share">partager</string>
+    <string name="cancel">annuler</string>
+    <string name="pause">pause</string>
+    <string name="searching">Recherche en cours...</string>
 </resources>

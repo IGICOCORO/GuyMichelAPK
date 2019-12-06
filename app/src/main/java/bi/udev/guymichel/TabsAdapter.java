@@ -1,5 +1,6 @@
 package bi.udev.guymichel;
 
+import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -11,12 +12,15 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 public class TabsAdapter extends FragmentStatePagerAdapter {
 
     String[] page_titles;
+    MainActivity activity;
 
-    public TabsAdapter(FragmentManager fm, String[] page_titles) {
+    public TabsAdapter(FragmentManager fm, MainActivity activity) {
         super(fm);
-        this.page_titles = page_titles;
+        this.page_titles = new String[]{activity.getResources().getString(R.string.Emission),
+                                        activity.getResources().getString(R.string.Archives),
+                                        activity.getResources().getString(R.string.Messages)};
+        this.activity = activity;
     }
-// = new String[]{"emissions", "archives", "Annonces"};
 
     @Override
     public CharSequence getPageTitle(int position) {
@@ -27,13 +31,13 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new EmissionsFragment();
+                return new EmissionsFragment(activity);
             case 1:
-                return new ArchivesFragment();
+                return new ArchivesFragment(activity);
             case 2:
-                return new TemoignagesFragment();
+                return new TemoignagesFragment(activity);
             default:
-                return new EmissionsFragment();
+                return new EmissionsFragment(activity);
         }
     }
 

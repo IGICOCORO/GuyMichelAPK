@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Archives">Ububiko</string>
+    <string name="Emission">Ibiganiro</string>
+    <string name="Messages">Ubutumwa</string>
+    <string name="Recherche">Gushaka</string>
+    <string name="about">Ibitwerekeye</string>
+    <string name="action_settings">Kuregera</string>
+    <string name="annuler">Kubireka</string>
+    <string name="annulé">Byaretswe</string>
+    <string name="audio_is_loading">Iri gutegurwa ...</string>
+    <string name="blue">Ubururu</string>
+    <string name="blue_selected">Hatoranijwe Ubururu</string>
+    <string name="cancel">kureka</string>
+    <string name="confirmation_suppr">Murakeneye by\'ukuri guhanagura</string>
+    <string name="contenant">handitsemo (* = byose)</string>
+    <string name="copyright">yakozwe na Guy Michel na Konstrictor wo muri UDEV Team</string>
+    <string name="d_apr_s_le">iby\'inyuma yo kuwa</string>
+    <string name="d_avant_le">ibya mbere yo kuwa</string>
+    <string name="delete">Guhanagura</string>
+    <string name="du">" yo ku utariki "</string>
+    <string name="download">gukurura</string>
+    <string name="envoyer_avec">Ohereza ukoresheje</string>
+    <string name="green">Icyatsi kibisi</string>
+    <string name="green_selected">hahiswemo icyatsi kibisi.</string>
+    <string name="mot_clef">icyitonderwa</string>
+    <string name="no_internet">Nimurebe ko mufite connexion. Bikomeje kwanga musabwe gushaka/gukoresha application iri ku gihe.</string>
+    <string name="no_more_data">nta bindi bisigaye</string>
+    <string name="ok">Sawa</string>
+    <string name="others">Ibikurikiyeho</string>
+    <string name="pause">gutegereza</string>
+    <string name="playing">Harimwo kuvuga :</string>
+    <string name="playing_music_icon">Ishusho y\'ibirimo kuvuga</string>
+    <string name="recherche">Gushyaka</string>
+    <string name="resume">gukomeza</string>
+    <string name="share">kugezaho</string>
+    <string name="sortie_le">byo ku itariki</string>
+    <string name="testify">Gutanga Ubuhamya</string>
+    <string name="suppression">Gusiba</string>
+    <string name="supprimer">Hanagura</string>
+    <string name="theme">Ibara :</string>
+    <string name="janvier">Mutarama</string>
+    <string name="février">Gashyantare</string>
+    <string name="mars">Werurwe</string>
+    <string name="avril">Mata</string>
+    <string name="mai">Gicurasi</string>
+    <string name="juin">Kamena</string>
+    <string name="juillet">Nyakanga</string>
+    <string name="août">Kanama</string>
+    <string name="septembre">Nzeli</string>
+    <string name="octobre">Ukwakira</string>
+    <string name="novembre">Ugushyingo</string>
+    <string name="décembre">Ukuboza</string>
+    <string name="language">Ikirimi</string>
+    <string name="maroon"></string>
+</resources>

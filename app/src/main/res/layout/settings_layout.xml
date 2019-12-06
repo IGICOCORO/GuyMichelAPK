@@ -10,32 +10,34 @@
         android:layout_height="wrap_content"
         android:text="@string/language" />
 
-    <RadioGroup
-        android:id="@+id/language_radio_group"
+    <ToggleButton
+        android:id="@+id/radio_en"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="@string/english"
+        android:textOn="@string/english_selected" />
 
-        <RadioButton
-            android:id="@+id/radio_en"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/english" />
+    <ToggleButton
+        android:id="@+id/radio_fr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/francais"
+        android:textOn="@string/fran_ais_sectionn"/>
 
-        <RadioButton
-            android:id="@+id/radio_fr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/francais" />
+    <ToggleButton
+        android:id="@+id/radio_rw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/ikinyarwanda"
+        android:textOn="@string/mwahisemwo_ikinyarwanda"/>
 
-        <RadioButton
-            android:id="@+id/radio_run"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/ikirundi" />
-    </RadioGroup>
+    <ToggleButton
+        android:id="@+id/radio_run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/ikirundi"
+        android:textOn="@string/mwahisemwo_ikirundi"/>
 
     <TextView
         android:id="@+id/txt_settings_theme"
@@ -43,45 +45,41 @@
         android:layout_height="wrap_content"
         android:text="@string/theme" />
 
-    <RadioGroup
-        android:id="@+id/color_radio_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
+        <ToggleButton
             android:id="@+id/radio_bleu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="@string/blue"
+            android:checked="false"
             android:textColor="#fff"
+            android:textOff="@string/blue"
+            android:textOn="@string/blue_selected"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_margin="2dp"/>
+            android:textStyle="bold" />
 
-        <RadioButton
+        <ToggleButton
             android:id="@+id/radio_marron"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/maroon"
+            android:textOff="@string/maroon"
+            android:textOn="@string/maroon_selected"
             android:textColor="#fff"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_margin="2dp" />
 
-        <RadioButton
+        <ToggleButton
             android:id="@+id/radio_vert"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="#7fa87f"
-            android:text="@string/green"
+            android:checked="false"
             android:textColor="#fff"
+            android:textOff="@string/green"
+            android:textOn="@string/green_selected"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_margin="2dp" />
-    </RadioGroup>
+            android:textStyle="bold" />
 </LinearLayout>

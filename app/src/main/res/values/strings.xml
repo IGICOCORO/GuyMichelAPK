@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Guy Michel</string>
+    <string name="app_name" translatable="false">La Sainte Trinité</string>
     <string name="copyright">made by Guy Michel and Konstrictor member of UDEV Team</string>
     <string name="Messages">Messages</string>
     <string name="Emission">Emissions</string>
@@ -8,8 +8,8 @@
     <string name="contenant">contains (* = everything)</string>
     <string name="mot_clef">keyword</string>
     <string name="sortie_le">created on</string>
-    <string name="d_avant_le">before</string>
-    <string name="d_apr_s_le">after</string>
+    <string name="d_avant_le">published before</string>
+    <string name="d_apr_s_le">published after</string>
     <string name="green">Green</string>
     <string name="maroon">Brown</string>
     <string name="blue">Blue</string>
@@ -40,6 +40,27 @@
     <string name="playing">Playing :</string>
     <string name="ok">OK</string>
     <string name="Recherche">Search</string>
-    <string name="du">" created on "</string>
+    <string name="du">\ published on\ </string>
     <string name="audio_is_loading">audio is loading...</string>
+    <string name="green_selected">Green(selected)</string>
+    <string name="maroon_selected">Brown(selected)</string>
+    <string name="blue_selected">Blue(selected)</string>
+    <string name="english_selected" translatable="false">English(selected)</string>
+    <string name="fran_ais_sectionn" translatable="false">Français(selectionné)</string>
+    <string name="mwahisemwo_ikirundi" translatable="false">Mwahisemwo Ikirundi</string>
+    <string name="about">About</string>
+    <string name="others">Others</string>
+    <string name="testify">Testify</string>
+    <string name="no_internet">Error : ckeck your internet connection. If this error persist, Please update the application</string>
+    <string name="no_more_data">no more data to load</string>
+    <string name="share">share</string>
+    <string name="delete">delete</string>
+    <string name="download">download</string>
+    <string name="resume">resume</string>
+    <string name="playing_music_icon">playing music icon</string>
+    <string name="cancel">cancel</string>
+    <string name="pause">pause</string>
+    <string name="ikinyarwanda" translatable="false">Ikinyarwanda</string>
+    <string name="mwahisemwo_ikinyarwanda" translatable="false">Mwahisemwo Ikinyarwanda</string>
+    <string name="searching">Searching ...</string>
 </resources>

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -36,9 +37,13 @@ public class ArchivesFragment extends Fragment implements SwipeRefreshLayout.OnR
     private GridLayoutManager gridLayoutManager;
     private AdaptateurArchive adaptateur;
     SwipeRefreshLayout swipe_layout_emission;
-    private Activity activity;
+    private MainActivity activity;
 
     public ArchivesFragment() {
+    }
+
+    public ArchivesFragment(MainActivity activity) {
+        this.activity = activity;
     }
 
     @Override
@@ -53,6 +58,7 @@ public class ArchivesFragment extends Fragment implements SwipeRefreshLayout.OnR
         paroles = new ArchiveModel(getContext()).getAll();
 
         gridLayoutManager = new GridLayoutManager(getContext(), 1);
+        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
         recyclerView.setLayoutManager(gridLayoutManager);
 
         adaptateur = new AdaptateurArchive(getContext(), paroles);
@@ -91,15 +97,16 @@ public class ArchivesFragment extends Fragment implements SwipeRefreshLayout.OnR
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
+            new AlertSettings(getContext(), activity).create().show();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        activity = getActivity();
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        activity = getActivity();
+//    }
 
     public void getArchives(){
         paroles = new ArchiveModel(getContext()).getAll();

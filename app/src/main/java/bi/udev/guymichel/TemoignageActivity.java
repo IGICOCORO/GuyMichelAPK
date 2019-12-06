@@ -34,7 +34,6 @@ public class TemoignageActivity extends AppCompatActivity {
         OkHttpClient client = new OkHttpClient();
         HttpUrl.Builder urlBuilder = HttpUrl.parse("http://"+ Host.url+"/api/message/"+slug).newBuilder();
         String url = urlBuilder.build().toString();
-
         Request request = new Request.Builder()
                 .url(url)
 //                .header("Authorization", "Token "+token)
@@ -43,11 +42,11 @@ public class TemoignageActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call call, IOException e) {
-                final String mMessage = e.getMessage().toString();
+//                final String mMessage = e.getMessage().toString();
                 TemoignageActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(TemoignageActivity.this, mMessage, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TemoignageActivity.this, R.string.no_internet, Toast.LENGTH_SHORT).show();
                     }
                 });
             }

@@ -5,6 +5,9 @@
     <color name="colorPrimaryDark">#533b25</color>
     <color name="colorAccent">#f9e7d7</color>
 
+    <color name="colorAccentTransparent">#55f53283</color>
+
+
     <color name="colorPrimaryLightGreen">#8be6b2</color>
     <color name="colorPrimaryGreen">#33ba6d</color>
     <color name="colorPrimaryDarkGreen">#055025</color>

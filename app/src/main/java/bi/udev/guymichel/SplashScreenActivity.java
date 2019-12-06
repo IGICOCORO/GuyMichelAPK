@@ -17,9 +17,6 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //This method is used so that your splash activity
-        //can cover the entire screen.
-        //this will bind your MainActivity.class file with activity_main.
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -36,4 +33,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         }, SPLASH_SCREEN_TIME_OUT);
     }
+
 }

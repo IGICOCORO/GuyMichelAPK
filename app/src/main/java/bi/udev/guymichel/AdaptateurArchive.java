@@ -61,6 +61,7 @@ class AdaptateurArchive extends RecyclerView.Adapter<AdaptateurArchive.ViewHolde
                 intent.putExtra("date", paroles.get(position).date);
                 intent.putExtra("photo", paroles.get(position).photo);
                 intent.putExtra("audio", paroles.get(position).audio);
+                intent.putExtra("id", paroles.get(position).id);
                 intent.putExtra("online", "false");
                 context.startActivity(intent);
 

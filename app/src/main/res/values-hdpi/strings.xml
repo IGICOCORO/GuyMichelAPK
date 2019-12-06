@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Guy Michel</string>
     <string name="title_activity_main">La Sainte Trinité</string>
 
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>

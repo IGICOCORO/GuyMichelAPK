@@ -70,26 +70,105 @@
                             android:textSize="14sp"/>
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/options_emission_online"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true" >
-                        <Button
-                            android:id="@+id/btn_card_emission_resume_down"
-                            style="@style/Widget.AppCompat.Button.Borderless"
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:layout_gravity="center"
+
+                        <LinearLayout
+                            android:id="@+id/widget_emission_resume_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:visibility="invisible"
-                            android:background="@drawable/play_icon"/>
-                        <Button
-                            android:id="@+id/btn_card_emission_download"
-                            style="@style/Widget.AppCompat.Button.Borderless"
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/download_icon"/>
+                            android:orientation="vertical">
+                            <Button
+                                android:id="@+id/btn_card_emission_resume_down"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/colored_play_icon"/>
+
+                            <TextView
+                                android:id="@+id/txt_emission_down_resume"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="10sp"
+                                android:text="@string/resume"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:orientation="vertical">
+                            <Button
+                                android:id="@+id/btn_card_emission_download"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/download_icon"/>
+
+                            <TextView
+                                android:id="@+id/txt_emission_download"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="10sp"
+                                android:text="@string/download"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/options_emission_offline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <Button
+                                android:id="@+id/btn_card_emission_share"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/share_icon"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="10sp"
+                                android:text="@string/share"/>
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="2dp"-->
+                            <!--android:orientation="vertical">-->
+                            <!--<Button-->
+                                <!--android:id="@+id/btn_card_emmission_delete"-->
+                                <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+                                <!--android:layout_width="36dp"-->
+                                <!--android:layout_height="36dp"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:background="@drawable/delete_icon"/>-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textSize="10sp"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:text="@string/delete"/>-->
+                        <!--</LinearLayout>-->
                     </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
@@ -99,6 +178,7 @@
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:progressDrawable="@drawable/progress_drawable"
                 android:scaleY="30"
                 android:visibility="gone"/>
         </android.support.v7.widget.CardView>

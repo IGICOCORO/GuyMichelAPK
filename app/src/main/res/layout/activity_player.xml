@@ -4,110 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     tools:context="bi.udev.guymichel.PlayerActivity">
+
+    <LinearLayout
+        android:id="@+id/player_background"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_avatar_mini_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+        </android.support.v7.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                app:cardCornerRadius="100dp"
-                android:layout_marginBottom="25dp"
-                android:layout_gravity="center">
-                <ImageView
-                    android:id="@+id/img_avatar_mini_player"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    />
-            </android.support.v7.widget.CardView>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/lbl_title_mini_player"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10px"
-                android:orientation="vertical">
+                android:text="Audio Title"
+                android:textColor="@color/cardview_light_background"
+                android:textAlignment="center"
+                android:textSize="18dp" />
 
-                <TextView
-                    android:id="@+id/lbl_title_mini_player"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Audio Title"
-                    android:textColor="@color/cardview_light_background"
-                    android:textAlignment="center"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:id="@+id/lbl_author_mini_player"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="audio author"
-                    android:textColor="@color/cardview_light_background"
-                    android:textAlignment="center"
-                    android:textSize="14dp" />
-            </LinearLayout>
-
-            <SeekBar
-                android:id="@+id/seek_progression"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/lbl_author_mini_player"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-
-                <TextView
-                    android:id="@+id/lbl_current_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:textColor="@color/cardview_light_background"
-                    android:text="00:00"/>
-
-                <TextView
-                    android:id="@+id/lbl_remaining_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/cardview_light_background"
-                    android:textAlignment="textEnd"
-                    android:layout_gravity="end"
-                    android:text="00:00" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:id="@+id/linearLayout">
-
-                <ImageButton
-                    android:id="@+id/btn_play_mini_player"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/play_icon"
-                    android:onClick="playMusic"/>
-
-                <ImageButton
-                    android:id="@+id/btn_stop_mini_player"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:background="@drawable/stop_icon"
-                    android:layout_gravity="center"
-                    android:onClick="stopMusic"/>
-            </LinearLayout>
+                android:text="audio author"
+                android:textColor="@color/cardview_light_background"
+                android:textAlignment="center"
+                android:textSize="14dp" />
         </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seek_progression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/lbl_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/cardview_light_background"
+                android:text="00:00"/>
+
+            <TextView
+                android:id="@+id/lbl_remaining_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/cardview_light_background"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/linearLayout">
+
+            <ImageButton
+                android:id="@+id/btn_play_mini_player"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/play_icon"
+                android:onClick="playMusic"/>
+
+            <ImageButton
+                android:id="@+id/btn_stop_mini_player"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/stop_icon"
+                android:layout_gravity="center"
+                android:onClick="stopMusic"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical"
+            android:onClick="deleteMusic">
+            <Button
+                android:id="@+id/btn_delete_mini_player"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:onClick="deleteMusic"
+                android:background="@drawable/delete_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="@string/delete"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="shareMusic">
+            <Button
+                android:id="@+id/btn_share_mini_player"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:onClick="shareMusic"
+                android:background="@drawable/share_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="@string/share"/>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

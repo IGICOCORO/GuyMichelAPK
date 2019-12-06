@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Guy Michel</string>
     <string name="Archives">Ububiko</string>
     <string name="Emission">Ibiganiro</string>
     <string name="Messages">Ubutumwa</string>
@@ -10,12 +9,12 @@
     <string name="copyright">yakozwe na Guy Michel na Konstrictor wo muri UDEV Team</string>
     <string name="green">Urwatsi rubisi</string>
     <string name="language">Ururimi :</string>
-    <string name="maroon">Umugina</string>
+    <string name="maroon">Inginagina</string>
     <string name="mot_clef">ijambo ryo kurondera</string>
-    <string name="sortie_le">c\'itariki</string>
+    <string name="sortie_le">vyasohowe itariki</string>
     <string name="theme">Ibara :</string>
-    <string name="d_apr_s_le">Imbere yo kuwa</string>
-    <string name="d_avant_le">inyuma yo kuwa</string>
+    <string name="d_apr_s_le">vy\'inyuma y\'itariki</string>
+    <string name="d_avant_le">ivy\'imbere yo kuwa</string>
     <string name="Recherche">Kurondera</string>
     <string name="annuler">Kubiheba</string>
     <string name="annulé">Vyahebwe</string>
@@ -40,5 +39,21 @@
     <string name="supprimer">Hanagura</string>
     <string name="title_activity_main">Ubutatu</string>
     <string name="audio_is_loading">iriko irategurwa ...</string>
-    <string name="du">" y'itariki "</string>
+    <string name="du">" yo kw'itariki "</string>
+    <string name="blue_selected">Hahiswemwo Ubururu</string>
+    <string name="green_selected">hahiswemwo Urwatsi Rubisi</string>
+    <string name="maroon_selected">Hahiswemwo inginagina</string>
+    <string name="about">Ibitwerekeye</string>
+    <string name="others">Ibindi</string>
+    <string name="testify">Gushinga Intahe</string>
+    <string name="no_more_data">nta bindi bisigaye</string>
+    <string name="no_internet">Akagorane: Nimurabe ko mufise connexion. Bikomeje kugenda uku Musasabwe gukwega application iri ku gihe</string>
+    <string name="delete">guhanagura</string>
+    <string name="download">gukwega</string>
+    <string name="resume">kubandanya</string>
+    <string name="share">gusangiza</string>
+    <string name="playing_music_icon">isanamu ijanye n\'ibiriko biravuga</string>
+    <string name="cancel">guheba</string>
+    <string name="pause">kurindira</string>
+    <string name="searching">Biriko biraronderwa...</string>
 </resources>
