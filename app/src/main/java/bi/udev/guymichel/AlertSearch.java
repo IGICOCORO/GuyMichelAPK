@@ -69,6 +69,11 @@ class AlertSearch extends Builder {
         if(spinner_year.getValue()%4==0) fevrier = 29;
         final int[] days_number = {31, fevrier, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
+        spinner_day.setMinValue(1);
+        spinner_day.setMaxValue(days_number[0]);
+//                spinner_day.setDisplayedValues(days);
+        spinner_day.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
+
         spinner_month.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {

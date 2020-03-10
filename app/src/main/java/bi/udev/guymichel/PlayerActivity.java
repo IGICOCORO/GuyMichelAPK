@@ -3,22 +3,19 @@ package bi.udev.guymichel;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.content.SharedPreferences;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -39,7 +36,7 @@ public class PlayerActivity extends AppCompatActivity {
 	public ImageView avatar;
     private String titre, author, photo, audio, online, date, id;
     private SeekBar seek_progression;
-    private LinearLayout player_background;
+    private LinearLayout player_background, btns_share_delete_player;
     SharedPreferences playerPreferences, colorPreferences;
     private Handler mHandler;
     private Boolean prepared = false;
@@ -60,6 +57,7 @@ public class PlayerActivity extends AppCompatActivity {
         avatar = (ImageView) findViewById(R.id.img_avatar_mini_player);
         seek_progression = (SeekBar) findViewById(R.id.seek_progression);
         player_background = (LinearLayout) findViewById(R.id.player_background);
+        btns_share_delete_player = (LinearLayout) findViewById(R.id.btns_share_delete_player);
 
         String color = colorPreferences.getString("color", "sans");
         if(color.equalsIgnoreCase("BLEU")){
@@ -173,9 +171,9 @@ public class PlayerActivity extends AppCompatActivity {
                 mHandler.postDelayed(this, 1000);
             }
         });
-//        if(online.equalsIgnoreCase("true")){
-//            btns_delete_share.setVisibility(View.GONE);
-//        }
+        if(online.equalsIgnoreCase("true")){
+            btns_share_delete_player.setVisibility(View.GONE);
+        }
     }
 
     private String convertInTimeFormat(int time){

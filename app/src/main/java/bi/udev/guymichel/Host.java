@@ -1,13 +1,7 @@
 package bi.udev.guymichel;
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
-import android.os.Environment;
-import android.view.Window;
-import android.view.WindowManager;
-
 
 import java.io.File;
 

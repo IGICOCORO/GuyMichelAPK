@@ -6,6 +6,7 @@
     <color name="colorAccent">#f9e7d7</color>
 
     <color name="colorAccentTransparent">#55f53283</color>
+    <color name="darkTransparent">#99000000</color>
 
 
     <color name="colorPrimaryLightGreen">#8be6b2</color>
@@ -17,4 +18,8 @@
     <color name="colorPrimaryBlue">#3068b1</color>
     <color name="colorPrimaryDarkBlue">#0b356b</color>
     <color name="colorAccentBlue">#e5edf9</color>
+
+
+    <color name="gray">#bbb</color>
+    <color name="white">#fff</color>
 </resources>

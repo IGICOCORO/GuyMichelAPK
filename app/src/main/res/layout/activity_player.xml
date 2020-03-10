@@ -114,6 +114,7 @@
 
 
     <LinearLayout
+        android:id="@+id/btns_share_delete_player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

@@ -14,12 +14,12 @@
     <string name="cancel">kureka</string>
     <string name="confirmation_suppr">Murakeneye by\'ukuri guhanagura</string>
     <string name="contenant">handitsemo (* = byose)</string>
-    <string name="copyright">yakozwe na Guy Michel na Konstrictor wo muri UDEV Team</string>
+    <string name="copyright">yakozwe na Guy Michel</string>
     <string name="d_apr_s_le">iby\'inyuma yo kuwa</string>
     <string name="d_avant_le">ibya mbere yo kuwa</string>
     <string name="delete">Guhanagura</string>
     <string name="du">" yo ku utariki "</string>
-    <string name="download">gukurura</string>
+    <string name="download">kubika</string>
     <string name="envoyer_avec">Ohereza ukoresheje</string>
     <string name="green">Icyatsi kibisi</string>
     <string name="green_selected">hahiswemo icyatsi kibisi.</string>
@@ -29,9 +29,8 @@
     <string name="ok">Sawa</string>
     <string name="others">Ibikurikiyeho</string>
     <string name="pause">gutegereza</string>
-    <string name="playing">Harimwo kuvuga :</string>
+    <string name="playing">Harimo kuvuga :</string>
     <string name="playing_music_icon">Ishusho y\'ibirimo kuvuga</string>
-    <string name="recherche">Gushyaka</string>
     <string name="resume">gukomeza</string>
     <string name="share">kugezaho</string>
     <string name="sortie_le">byo ku itariki</string>
@@ -52,5 +51,8 @@
     <string name="novembre">Ugushyingo</string>
     <string name="décembre">Ukuboza</string>
     <string name="language">Ikirimi</string>
-    <string name="maroon"></string>
+    <string name="maroon">Igitaka  Gikeye</string>
+    <string name="searching">Birimo gushakishwa...</string>
+    <string name="recherche">Ishakisha</string>
+    <string name="maroon_selected">hahiswemo Igitaka</string>
 </resources>

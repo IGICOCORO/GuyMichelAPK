@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">La Sainte Trinité</string>
-    <string name="copyright">made by Guy Michel and Konstrictor member of UDEV Team</string>
+    <string name="app_name" translatable="false">La Dernière Trompète</string>
+    <string name="copyright">made by Guy Michel</string>
     <string name="Messages">Messages</string>
     <string name="Emission">Emissions</string>
     <string name="Archives">Archives</string>

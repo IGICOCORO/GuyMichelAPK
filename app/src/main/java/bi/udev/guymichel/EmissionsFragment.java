@@ -1,9 +1,6 @@
 package bi.udev.guymichel;
 
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -132,7 +129,7 @@ public class EmissionsFragment extends Fragment implements SwipeRefreshLayout.On
                     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
                     @Override
                     public void run() {
-                        Toast.makeText(activity, R.string.no_internet, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity, R.string.no_internet, Toast.LENGTH_LONG).show();
                         if (Build.VERSION.SDK_INT >= 14) {
                             swipe_layout_emission.setRefreshing(false);
                         }
@@ -177,15 +174,16 @@ public class EmissionsFragment extends Fragment implements SwipeRefreshLayout.On
                 } catch (Exception e) {
                     e.printStackTrace();
                     final String message = e.getMessage();
-                    activity.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
+                    swipe_layout_emission.setRefreshing(false);
+//                    if(activity!=null)
+//                    activity.runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
 //                            Toast.makeText(getActivity(), R.string.no_more_data, Toast.LENGTH_SHORT).show();
-                            if (Build.VERSION.SDK_INT >= 14) {
-                                swipe_layout_emission.setRefreshing(false);
-                            }
-                        }
-                    });
+//                            if (Build.VERSION.SDK_INT >= 14) {
+//                            }
+//                        }
+//                    });
                 }
             }
         });

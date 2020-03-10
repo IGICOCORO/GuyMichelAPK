@@ -5,8 +5,10 @@ import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Build;
+import android.support.v4.content.res.ResourcesCompat;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -68,13 +70,13 @@ class AlertSettings extends Builder {
                 correctToggleColor(v);
             }
         });
+
         radio_fr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 correctToggleLangue(v);
             }
         });
-
         radio_en.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,6 +84,12 @@ class AlertSettings extends Builder {
             }
         });
         radio_run.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                correctToggleLangue(v);
+            }
+        });
+        radio_rw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 correctToggleLangue(v);
@@ -151,12 +159,19 @@ class AlertSettings extends Builder {
 
     public void correctToggleColor(View view) {
         ToggleButton selected = (ToggleButton) view;
-        if (radio_marron.getId() != selected.getId())
+        ((ToggleButton) view).setTextColor(activity.getResources().getColor(R.color.white));
+        if (radio_marron.getId() != selected.getId()) {
+            radio_marron.setTextColor(activity.getResources().getColor(R.color.gray));
             radio_marron.setChecked(false);
-        if (radio_vert.getId() != selected.getId())
+        }
+        if (radio_vert.getId() != selected.getId()) {
+            radio_vert.setTextColor(activity.getResources().getColor(R.color.gray));
             radio_vert.setChecked(false);
-        if (radio_bleu.getId() != selected.getId())
+        }
+        if (radio_bleu.getId() != selected.getId()) {
             radio_bleu.setChecked(false);
+            radio_bleu.setTextColor(activity.getResources().getColor(R.color.gray));
+        }
     }
 
     public void correctToggleLangue(View view) {
@@ -167,5 +182,7 @@ class AlertSettings extends Builder {
             radio_run.setChecked(false);
         if (radio_fr.getId() != selected.getId())
             radio_fr.setChecked(false);
+        if (radio_rw.getId() != selected.getId())
+            radio_rw.setChecked(false);
     }
 }

@@ -6,14 +6,13 @@
     <string name="action_settings">Paramètres</string>
     <string name="blue">Bleu</string>
     <string name="contenant">contenant (* = tout)</string>
-    <string name="copyright">fait par Guy Michel et Konstrictor membre de UDEV Team</string>
+    <string name="copyright">fait par Guy Michel</string>
     <string name="d_apr_s_le">sorties après le</string>
     <string name="d_avant_le">sorties avant le</string>
     <string name="green">Vert</string>
     <string name="language">Langue :</string>
     <string name="maroon">Marron</string>
     <string name="mot_clef">mot clé</string>
-    <string name="navigation_drawer_close"></string>
     <string name="sortie_le">sortie le</string>
     <string name="theme">Theme :</string>
     <string name="Recherche">Recherche</string>
@@ -38,7 +37,6 @@
     <string name="septembre">Septembre</string>
     <string name="suppression">Suppression</string>
     <string name="supprimer">Supprimer</string>
-    <string name="title_activity_main">La Sainte Trinité</string>
     <string name="audio_is_loading">chargement de l\'audio</string>
     <string name="du">\ sorties le\ </string>
     <string name="blue_selected">Bleu (séléctionnée)</string>
